@@ -45,9 +45,9 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.7</java.version>
         <maven.version.min>3.0.5</maven.version.min>
-        <scala.minor.version>2.10</scala.minor.version>
-        <scala.complete.version>${scala.minor.version}.4</scala.complete.version>
-        <spark.version>1.5.2</spark.version>
+        <scala.minor.version>2.11</scala.minor.version>
+        <scala.complete.version>${scala.minor.version}.8</scala.complete.version>
+        <spark.version>2.0.0</spark.version>
     </properties>
 
     <dependencies>

@@ -1,1 +1,1 @@
-/opt/spark/bin/spark-submit --class com.colobu.douban.recommender.DoubanRecommender --master local[*]  /opt/douban/recommender-1.0.0.jar
+/Users/smallnest/bigdata/spark/bin/spark-submit --class com.colobu.douban.recommender.DoubanRecommender --master local[*]  target/recommender-1.0-SNAPSHOT.jar

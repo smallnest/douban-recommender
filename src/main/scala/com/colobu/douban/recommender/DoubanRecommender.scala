@@ -251,7 +251,8 @@ object DoubanRecommender {
       }
     }
 
-    allRecommendations.saveAsTextFile(base + "result.csv")
+    //allRecommendations.saveAsTextFile(base + "result.csv")
+    allRecommendations.coalesce(1).sortByKey().saveAsTextFile(base + "result.csv")
 
     unpersist(model)
   }
