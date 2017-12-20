@@ -41,7 +41,7 @@ object DoubanRecommender {
   //得到电影名字的RDD
   def buildMovies(rawHotMoviesData: RDD[String]): Map[Int, String] =
     rawHotMoviesData.flatMap { line =>
-      val tokens = line.split(',')
+      val tokens = line.split('.')
       if (tokens(0).isEmpty) {
         None
       } else {
